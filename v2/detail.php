@@ -287,7 +287,14 @@ $page = $members[$_GET['id']];
     
     <footer class="footer text-center pt-2 pb-5">
 	    <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-        <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by Your names</small>
+        <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by 
+            <?php $i = 0;
+                foreach($members as $member){
+                echo $member['firstN'].' '.$member['lastN'];
+                if($i+1!==count($members)) echo ' & ';
+                $i++;
+            };?>
+        </small>
     </footer>
 
     
