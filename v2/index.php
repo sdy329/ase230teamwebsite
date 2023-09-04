@@ -56,7 +56,7 @@ $members=[
 					        <div class="row p-4 justify-content-center justify-content-md-between">
 						        <div class="primary-info col-auto">
 							        <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">'.$member['firstN'].' '.$member['lastN'].'</h1>
-							        <div class="title mb-3">Member 1 role</div>
+							        <div class="title mb-3">'.$member['role'].'</div>
 								    <a href="detail.php?id='.$id.'" class="btn btn-secondary">See full profile</a>
 						        </div>
 						        <div class="secondary-info col-auto mt-2">

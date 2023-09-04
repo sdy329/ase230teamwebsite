@@ -21,21 +21,26 @@ $members=[
 				'company'=>'Global Business Solutions',
 				'start'=>'2023',
 				'end'=>'Present',
+				'description'=>'Provided complete IT technical support services to 15,000+ end users in a customer first IT firm with 500+ corporate customers. Efficiently solved customer issues daily using system operation and customer service skills. Worked fluently as a team with other Service Technicians to troubleshoot solutions efficiently. Work with higher level Service Technicians to learn Microsoft Azure, networks, and firewalls.',
+
 			],
 			'Phone Agent'=>[
 				'company'=>'Northern Kentucky University',
 				'start'=>'2022',
 				'end'=>'2023',
+				'description'=>'Advised students and parents on scholarship and aid research. Safely handle exchange of confidential and sensitive information between students and other financial aid staff. Filter incoming documents for accuracy, completeness, and return incomplete or missing documentation to students in a timely manner. Work with and securely distribute documents to other offices within the university.',
 			],
 			'Tree Care Technician'=>[
 				'company'=>'His Hands Tree Service',
 				'start'=>'2020',
 				'end'=>'2020',
+				'description'=>'Worked within a precise schedule to provide quality service to customers in a timely manner. Ensured safety while working within a high danger environment.',
 			],
 			'Camp Counselor'=>[
 				'company'=>'Camp Crooked Creek',
 				'start'=>'2016',
 				'end'=>'2018',
+				'description'=>'Worked within a team to deliver a nationally honored service. Planned and Delivered presentations to youth on robotics and software development. Provided customer service in a high stress work environment.',
 			]
 		],
 		
@@ -131,7 +136,7 @@ $page = $members[$_GET['id']];
 										    <div class="resume-position-time">'.$jobDetails['start'].' - '.$jobDetails['end'].'</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
-										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
+										    <p>'.$jobDetails['description'].'</p>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
 										    <p>Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
 										    <ul>

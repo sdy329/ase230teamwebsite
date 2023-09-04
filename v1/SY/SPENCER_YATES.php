@@ -93,6 +93,7 @@ $positionHeld = array('2023 - Present','2022 - 2023', '2020 - 2020', '2016 - 201
 										    <div class="resume-position-time"><?php echo $positionHeld[0];?></div>
 									    </div>
 									    <div class="resume-timeline-item-desc">
+											<p><?php echo 'Provided complete IT technical support services to 15,000+ end users in a customer first IT firm with 500+ corporate customers. Efficiently solved customer issues daily using system operation and customer service skills. Worked fluently as a team with other Service Technicians to troubleshoot solutions efficiently. Work with higher level Service Technicians to learn Microsoft Azure, networks, and firewalls.';?></p>
 										    <ul>
 												<li><?php echo 'Provided complete IT technical support services to 15,000+ end users in a customer first IT firm with 500+ corporate customers.';?></li>
 												<li><?php echo 'Efficiently solved customer issues daily using system operation and customer service skills.';?></li>
@@ -117,10 +118,11 @@ $positionHeld = array('2023 - Present','2022 - 2023', '2020 - 2020', '2016 - 201
 										    <div class="resume-position-time"><?php echo $positionHeld[1];?></div>
 									    </div>
 									    <div class="resume-timeline-item-desc">
+										<?php echo 'Advised students and parents on scholarship and aid research. Safely handle exchange of confidential and sensitive information between students and other financial aid staff. Filter incoming documents for accuracy, completeness, and return incomplete or missing documentation to students in a timely manner. Work with and securely distribute documents to other offices within the university.';?>
 										<ul>
-												<li><?php echo 'Advised students and parents on scholarship and aid research';?></li>
+												<li><?php echo 'Advised students and parents on scholarship and aid research.';?></li>
 												<li><?php echo 'Safely handle exchange of confidential and sensitive information between students and other financial aid staff.';?></li>
-												<li><?php echo 'Filter incoming documents for accuracy, completeness, and return incomplete or missing documentation to students in a timely manner';?></li>
+												<li><?php echo 'Filter incoming documents for accuracy, completeness, and return incomplete or missing documentation to students in a timely manner.';?></li>
 												<li><?php echo 'Work with and securely distribute documents to other offices within the university.';?></li>
 											</ul>
 									    </div>
@@ -135,6 +137,7 @@ $positionHeld = array('2023 - Present','2022 - 2023', '2020 - 2020', '2016 - 201
 										    <div class="resume-position-time"><?php echo $positionHeld[2];?></div>
 									    </div>
 									    <div class="resume-timeline-item-desc">
+										<?php echo 'Worked within a precise schedule to provide quality service to customers in a timely manner. Ensured safety while working within a high danger environment.';?>
 											<ul>
 												<li><?php echo 'Worked within a precise schedule to provide quality service to customers in a timely manner.';?></li>
 												<li><?php echo 'Ensured safety while working within a high danger environment.';?></li>
@@ -150,8 +153,9 @@ $positionHeld = array('2023 - Present','2022 - 2023', '2020 - 2020', '2016 - 201
 										    <div class="resume-position-time"><?php echo $positionHeld[3];?></div>
 									    </div>
 									    <div class="resume-timeline-item-desc">
+										<?php echo 'Worked within a team to deliver a nationally honored service. Planned and Delivered presentations to youth on robotics and software development. Provided customer service in a high stress work environment.';?>
 										<ul>
-												<li><?php echo 'Worked within a team to deliver a nationally honored service';?></li>
+												<li><?php echo 'Worked within a team to deliver a nationally honored service.';?></li>
 												<li><?php echo 'Planned and Delivered presentations to youth on robotics and software development.';?></li>
 												<li><?php echo 'Provided customer service in a high stress work environment.';?></li>
 											</ul>
