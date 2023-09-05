@@ -25,8 +25,10 @@ $members=[
 				'achievements'=>[
 				],
 				'skills'=>[
-					'test1',
-					'test2'
+					'Powershell',
+					'Active Directory',
+					'Microsoft Admin',
+					'Firewalls',
 				]
 			],
 			'Phone Agent'=>[
@@ -37,8 +39,6 @@ $members=[
 				'achievements'=>[
 				],
 				'skills'=>[
-					'test1',
-					'test2'
 				]
 			],
 			'Tree Care Technician'=>[
@@ -49,8 +49,6 @@ $members=[
 				'achievements'=>[
 				],
 				'skills'=>[
-					'test1',
-					'test2'
 				]
 			],
 			'Camp Counselor'=>[
@@ -61,8 +59,6 @@ $members=[
 				'achievements'=>[
 				],
 				'skills'=>[
-					'test1',
-					'test2'
 				]
 			],
 		],
@@ -101,8 +97,18 @@ $members=[
                 'end'=>'2024',
             ]
 		],
+		'awards'=>[
+			'VEX Worlds Division Finalists 2023'=>[
+				'description'=>'Out of 100 teams in attendance at the world championships, and 300 individual collegiate teams worldwide our team ended the season top 4 in the world.'
+			]
+		],
 		'languages'=>[
 			'English'
+		],
+		'interests'=>[
+			'Soccer',
+			'Robotics',
+			'Camping'
 		],
 		'projects'=>[
 			'NUKE Robotics Programming'=>[
@@ -352,19 +358,16 @@ $page = $members[$_GET['id']];
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled resume-awards-list">
-								    <li class="mb-2 ps-4 position-relative">
-								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
-								        <div class="resume-award-name">Award Name Lorem</div>
-								        <div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</div>
-								    </li>
-								    <li class="mb-0 ps-4 position-relative">
-								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
-								        <div class="resume-award-name">Award Name Ipsum</div>
-								        <div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque.</div>
-								    </li>
+									<?php foreach($page['awards'] as $award => $awardData){
+								    	echo '<li class="mb-2 ps-4 position-relative">
+								        	<i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+								        	<div class="resume-award-name">'.$award.'</div>
+								        	<div class="resume-award-desc">'.$awardData['description'].'</div>
+								    	</li>';
+									};?>
 							    </ul>
 						    </div>
-					    </section><!--//interests-section-->
+					    </section>
 					    <section class="resume-section language-section mb-5">
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Languages</h2>
 						    <div class="resume-section-content">
@@ -374,14 +377,14 @@ $page = $members[$_GET['id']];
 									};?>
 							    </ul>
 						    </div>
-					    </section><!--//language-section-->
+					    </section>
 					    <section class="resume-section interests-section mb-5">
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
-								    <li class="mb-1">Climbing</li>
-								    <li class="mb-1">Snowboarding</li>
-								    <li class="mb-1">Cooking</li>
+									<?php foreach($page['interests'] as $interest){
+								    	echo '<li class="mb-1">'.$interest.'</li>';
+									};?>
 							    </ul>
 						    </div>
 					    </section>
@@ -397,7 +400,7 @@ $page = $members[$_GET['id']];
 									<div class="card-body">
 										<h5 class="card-title">'.$project.'</h5>
 										<p class="card-text">'.$projectData['description'].'</p>
-										<a href="btn btn-outline-primary" href="https://'.$projectData['link'].'" target="_blank">Go to link</a>
+										<a class="btn btn-outline-primary" href="https://'.$projectData['link'].'" target="_blank">Go to link</a>
 									</div>
 								</div>
 							</div>';
