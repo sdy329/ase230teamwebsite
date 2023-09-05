@@ -148,24 +148,25 @@ $members=[
 				'company'=>'LEGO',
 				'start'=>'2021',
 				'end'=>'Present',
-				'description'=>'Worked with customers enjoying the LEGO toy company, interacting with guests to provide a well thought-out expirence',
+				'description'=>'Worked with customers enjoying the LEGO toy company, interacting with guests to provide a well thought-out expirence. Also used customer service skills and understood back-end applications within the LBR System.',
 				'achievements'=>[
 					'Employee of the month',
 					'Company Notice',
-					'LBR Specialist of the Month'
+					'LBR Specialist of the Month',
+					'Programming'
 				],
 				'skills'=>[
 					'Java',
 					'Python',
-					'PHP',
-					'C++'
+					'Customer Services',
+					'Retail Knowledge'
 				]
 			],
 			'GE - General Appliances Sales Represenative'=>[
 				'company'=>'GE',
 				'start'=>'2019',
 				'end'=>'2021',
-				'description'=>'Worked with customers selling appliances and helping people find the right tools for working efficiency.',
+				'description'=>'Worked with customers selling appliances and helping people find the right tools for working efficiency. With the inclusion of working on backend fundamentals of GE systems and appliances.',
 				'achievements'=>[
 					'GE Products Certification'
 				],
@@ -179,8 +180,8 @@ $members=[
 			'JavaScript'=>[
 				'progress'=>'98',
 			],
-			'TypeScript'=>[
-				'progress'=>'96',
+			'Python'=>[
+				'progress'=>'75',
 			],
 			'React'=>[
 				'progress'=>'94',
@@ -188,8 +189,8 @@ $members=[
 			'Node.js'=>[
 				'progress'=>'96',
 			],
-			'Java'=>[
-				'progress'=>'95',
+			'Lua'=>[
+				'progress'=>'80',
 			],
 		],
 		'otherSkills'=>[
