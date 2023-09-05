@@ -149,12 +149,20 @@ $members=[
 				'start'=>'2021',
 				'end'=>'Present',
 				'description'=>'Worked with customers enjoying the LEGO toy company, interactin with guests to provide a well thought-out expirence',
+				'achievements'=>[
+				],
+				'skills'=>[
+				]
 			],
 			'GE - General Appliances Sales Represenative'=>[
 				'company'=>'GE',
 				'start'=>'2019',
 				'end'=>'2021',
 				'description'=>'Worked with customers selling appliances and helping people find the right tools for working efficiency.',
+				'achievements'=>[
+				],
+				'skills'=>[
+				]
 			],
 		],
 		'proSkills'=>[
@@ -198,7 +206,7 @@ $members=[
 			]
 		],
 		'languages'=>[
-			'English'
+			'English',
 			'Russian'
 		],
 		'interests'=>[
