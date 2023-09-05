@@ -1,4 +1,3 @@
-<!-- Test -->
 
 <?php
 $members=[
@@ -12,7 +11,7 @@ $members=[
         'firstN'=>'Andrey',
         'lastN'=>'Owen',
         'role'=>'',
-        'profile'=>'.\\assets\\img\\AO\\profile.png'
+        'profile'=>'.\\assets\\img\\AO\\Icon.jpg'
     ]
 ]
 
