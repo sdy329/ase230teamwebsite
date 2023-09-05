@@ -204,7 +204,7 @@ $members=[
 		'interests'=>[
 			'LEGO',
 			'Running',
-			'CampingProgramming'
+			'Programming'
 		],
 		'projects'=>[
 			'Podscholar Application'=>[
