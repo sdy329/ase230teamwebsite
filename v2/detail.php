@@ -148,10 +148,17 @@ $members=[
 				'company'=>'LEGO',
 				'start'=>'2021',
 				'end'=>'Present',
-				'description'=>'Worked with customers enjoying the LEGO toy company, interactin with guests to provide a well thought-out expirence',
+				'description'=>'Worked with customers enjoying the LEGO toy company, interacting with guests to provide a well thought-out expirence',
 				'achievements'=>[
+					'Employee of the month',
+					'Company Notice',
+					'LBR Specialist of the Month'
 				],
 				'skills'=>[
+					'Java',
+					'Python',
+					'PHP',
+					'C++'
 				]
 			],
 			'GE - General Appliances Sales Represenative'=>[
@@ -160,8 +167,11 @@ $members=[
 				'end'=>'2021',
 				'description'=>'Worked with customers selling appliances and helping people find the right tools for working efficiency.',
 				'achievements'=>[
+					'GE Products Certification'
 				],
 				'skills'=>[
+					'Consumer Services',
+					'Customer Interaction'
 				]
 			],
 		],
