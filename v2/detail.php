@@ -198,7 +198,7 @@ $members=[
 			]
 		],
 		'languages'=>[
-			'English'
+			'English',
 			'Russian'
 		],
 		'interests'=>[
