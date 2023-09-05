@@ -384,10 +384,9 @@ $page = $members[$_GET['id']];
 								    <li class="mb-1">Cooking</li>
 							    </ul>
 						    </div>
-					    </section><!--//interests-section-->
-					    
+					    </section>
 				    </div>
-			    </div><!--//row-->
+			    </div>
 				<section class="resume-section experience-section mb-5">
 					<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Projects</h2>
 					<div class="row mt-4">
@@ -404,8 +403,8 @@ $page = $members[$_GET['id']];
 							</div>';
 						};?>
 					</div>
-				</section><!--//projects-section-->
-		    </div><!--//resume-body-->
+				</section>
+		    </div>
 	    </div>
     </article> 
 
