@@ -186,40 +186,41 @@ $members=[
 			'Leadership',
 		],
 		'education'=>[
-            'BSc Applied Sotware Engineering'=>[
+            'BS Applied Sotware Engineering'=>[
                 'school'=>'Northern Kentucky University',
-                'start'=>'2019',
+                'start'=>'2020',
                 'end'=>'2024',
             ]
 		],
 		'awards'=>[
-			'VEX Worlds Division Finalists 2023'=>[
-				'description'=>'Out of 100 teams in attendance at the world championships, and 300 individual collegiate teams worldwide our team ended the season top 4 in the world.'
+			'Microsoft Excellence Scholar'=>[
+				'description'=>'Certified in Office 365 with extensive reputation.'
 			]
 		],
 		'languages'=>[
 			'English'
+			'Russian'
 		],
 		'interests'=>[
-			'Soccer',
-			'Robotics',
-			'Camping'
+			'LEGO',
+			'Running',
+			'CampingProgramming'
 		],
 		'projects'=>[
-			'NUKE Robotics Programming'=>[
-				'description'=>'I founded a competitive robotics program at Northern Kentucky University. My roles on the team included: President, Programmer, and Driver.',
-				'img'=>'.\\assets\\img\\SY\\NUKEBanner.png',
-				'link'=>'github.com/NUKE-robotics'
+			'Podscholar Application'=>[
+				'description'=>'An orginized podcast website for test programming purposes.',
+				'img'=>'.\\assets\\img\\AO\\Image3.jpg',
+				'link'=>'https://github.com/khaidigidinos/PodScholar'
 			],
-			'KVS Discord Bot'=>[
-				'description'=>'Discord Bot I develop to help with moderation of the Kentucky VEX Discord Server.',
-				'img'=>'.\\assets\\img\\SY\\KVSBanner.png',
-				'link'=>'github.com/sdy329/kvs-bot'
+			'Webpage Development'=>[
+				'description'=>'Web Design and Development',
+				'img'=>'.\\assets\\img\\AO\\Image1.jpg',
+				'link'=>'https://github.com/Colevy-Collins/ASE-285-HW2'
 			],
-			'BigBro Discord Bot'=>[
-				'description'=>'Discord Bot I develop to help with moderation of the Vex Robotics Discord Server.',
-				'img'=>'.\\assets\\img\\SY\\BigBroBanner.png',
-				'link'=>'github.com/jtkiesel/bigbro'
+			'To-Do Application'=>[
+				'description'=>'To-Do application to manage tasks in a list style.',
+				'img'=>'.\\assets\\img\\AO\\Image2.jpg',
+				'link'=>'https://github.com/Colevy-Collins/toy-project'
 			],
 		]
 	],
