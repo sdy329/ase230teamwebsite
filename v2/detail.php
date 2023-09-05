@@ -151,6 +151,61 @@ $members=[
 				'description'=>'Worked with customers selling appliances and helping people find the right tools for working efficiency.',
 			],
 		],
+		'proSkills'=>[
+			'JavaScript'=>[
+				'progress'=>'98',
+			],
+			'TypeScript'=>[
+				'progress'=>'96',
+			],
+			'React'=>[
+				'progress'=>'94',
+			],
+			'Node.js'=>[
+				'progress'=>'96',
+			],
+			'Java'=>[
+				'progress'=>'95',
+			],
+		],
+		'otherSkills'=>[
+			'Python',
+			'Powershell',
+			'C',
+			'C++',
+			'Wireframing',
+			'Git',
+			'Networks',
+			'Troubleshooting',
+			'Leadership',
+		],
+		'education'=>[
+            'BSc Applied Sotware Engineering'=>[
+                'school'=>'Northern Kentucky University',
+                'start'=>'2019',
+                'end'=>'2024',
+            ]
+		],
+		'languages'=>[
+			'English'
+		],
+		'projects'=>[
+			'NUKE Robotics Programming'=>[
+				'description'=>'I founded a competitive robotics program at Northern Kentucky University. My roles on the team included: President, Programmer, and Driver.',
+				'img'=>'.\\assets\\img\\SY\\NUKEBanner.png',
+				'link'=>'github.com/NUKE-robotics'
+			],
+			'KVS Discord Bot'=>[
+				'description'=>'Discord Bot I develop to help with moderation of the Kentucky VEX Discord Server.',
+				'img'=>'.\\assets\\img\\SY\\KVSBanner.png',
+				'link'=>'github.com/sdy329/kvs-bot'
+			],
+			'BigBro Discord Bot'=>[
+				'description'=>'Discord Bot I develop to help with moderation of the Vex Robotics Discord Server.',
+				'img'=>'.\\assets\\img\\SY\\BigBroBanner.png',
+				'link'=>'github.com/jtkiesel/bigbro'
+			],
+		]
 	],
 ];
 
