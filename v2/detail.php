@@ -93,7 +93,14 @@ $members=[
 			'Networks',
 			'Troubleshooting',
 			'Leadership',
-		]
+		],
+		'education'=>[
+            'BSc Applied Sotware Engineering'=>[
+                'school'=>'Northern Kentucky University',
+                'start'=>'2019',
+                'end'=>'2024',
+            ]
+		],
     ],
 	'andrey'=>[
 		'firstN'=>'Andrey',
@@ -257,16 +264,12 @@ $page = $members[$_GET['id']];
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
-								    <li class="mb-2">
-								        <div class="resume-degree font-weight-bold">MSc in Computer Science</div>
-								        <div class="resume-degree-org">University College London</div>
-								        <div class="resume-degree-time">2013 - 2014</div>
-								    </li>
-								    <li>
-								        <div class="resume-degree font-weight-bold">BSc Maths and Physics</div>
-								        <div class="resume-degree-org">Imperial College London</div>
-								        <div class="resume-degree-time">2010 - 2013</div>
-								    </li>
+									<?php foreach($page['education'] as $degree => $degreeData){
+    									echo '<li class="mb-2">
+										<div class="resume-degree-name font-weight-bold">'.$degree.'</div>
+										<div class="resume-degree-org">'.$degreeData['school'].'</div>
+										<div class="resume-degree-time">'.$degreeData['start'].' - '.$degreeData['end'].'</div>
+    								</li>';};?>
 							    </ul>
 						    </div>
 					    </section><!--//education-section-->
