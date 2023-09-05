@@ -101,6 +101,26 @@ $members=[
                 'end'=>'2024',
             ]
 		],
+		'languages'=>[
+			'English'
+		],
+		'projects'=>[
+			'NUKE Robotics Programming'=>[
+				'description'=>'I founded a competitive robotics program at Northern Kentucky University. My roles on the team included: President, Programmer, and Driver.',
+				'img'=>'.\\assets\\img\\SY\\NUKEBanner.png',
+				'link'=>'github.com/NUKE-robotics'
+			],
+			'KVS Discord Bot'=>[
+				'description'=>'Discord Bot I develop to help with moderation of the Kentucky VEX Discord Server.',
+				'img'=>'.\\assets\\img\\SY\\KVSBanner.png',
+				'link'=>'github.com/sdy329/kvs-bot'
+			],
+			'BigBro Discord Bot'=>[
+				'description'=>'Discord Bot I develop to help with moderation of the Vex Robotics Discord Server.',
+				'img'=>'.\\assets\\img\\SY\\BigBroBanner.png',
+				'link'=>'github.com/jtkiesel/bigbro'
+			],
+		]
     ],
 	'andrey'=>[
 		'firstN'=>'Andrey',
@@ -130,41 +150,6 @@ $members=[
 				'end'=>'2021',
 				'description'=>'Worked with customers selling appliances and helping people find the right tools for working efficiency.',
 			],
-		],
-		'proSkills'=>[
-			'JavaScript'=>[
-				'progress'=>'98',
-			],
-			'TypeScript'=>[
-				'progress'=>'96',
-			],
-			'React'=>[
-				'progress'=>'94',
-			],
-			'Node.js'=>[
-				'progress'=>'96',
-			],
-			'Java'=>[
-				'progress'=>'95',
-			],
-		],
-		'otherSkills'=>[
-			'Python',
-			'Powershell',
-			'C',
-			'C++',
-			'Wireframing',
-			'Git',
-			'Networks',
-			'Troubleshooting',
-			'Leadership',
-		],
-		'education'=>[
-            'BSc Applied Sotware Engineering'=>[
-                'school'=>'Northern Kentucky University',
-                'start'=>'2020',
-                'end'=>'2024',
-            ]
 		],
 	],
 ];
@@ -329,9 +314,9 @@ $page = $members[$_GET['id']];
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Languages</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled resume-lang-list">
-								    <li class="mb-2"><span class="resume-lang-name font-weight-bold">English</span> <small class="text-muted font-weight-normal">(Native)</small></li>
-								    <li class="mb-2 align-middle"><span class="resume-lang-name font-weight-bold">French</span> <small class="text-muted font-weight-normal">(Professional)</small></li>
-								    <li><span class="resume-lang-name font-weight-bold">Spanish</span> <small class="text-muted font-weight-normal">(Professional)</small></li>
+									<?php foreach($page['languages'] as $language){
+								    	echo '<li class="mb-2"><span class="resume-lang-name font-weight-bold">'.$language.'</span></li>';
+									};?>
 							    </ul>
 						    </div>
 					    </section><!--//language-section-->
@@ -351,41 +336,21 @@ $page = $members[$_GET['id']];
 				<section class="resume-section experience-section mb-5">
 					<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Projects</h2>
 					<div class="row mt-4">
-						<div class="col-md-4">
-							<div class="card">
-								<img src="path-to-project-image1.jpg" alt="Project 1" class="card-img-top">
-								<div class="card-body">
-									<h5 class="card-title">Project 1</h5>
-									<p class="card-text">Brief description of Project 1.</p>
-									<a href="btn btn-outline-primary" href="#">Go to link</a>
+						<?php foreach($page['projects'] as $project => $projectData){
+							echo '<div class="col-md-4">
+								<div class="card">
+									<img src="'.$projectData['img'].'" alt="'.$project.' Image" class="card-img-top">
+									<div class="card-body">
+										<h5 class="card-title">'.$project.'</h5>
+										<p class="card-text">'.$projectData['description'].'</p>
+										<a href="btn btn-outline-primary" href="https://'.$projectData['link'].'" target="_blank">Go to link</a>
+									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="card">
-								<img src="path-to-project-image2.jpg" alt="Project 2" class="card-img-top">
-								<div class="card-body">
-									<h5 class="card-title">Project 2</h5>
-									<p class="card-text">Brief description of Project 2.</p>
-									<a href="btn btn-outline-primary" href="#">Go to link</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="card">
-								<img src="path-to-project-image3.jpg" alt="Project 3" class="card-img-top">
-								<div class="card-body">
-									<h5 class="card-title">Project 3</h5>
-									<p class="card-text">Brief description of Project 3.</p>
-									<a href="btn btn-outline-primary" href="#">Go to link</a>
-								</div>
-							</div>
-						</div>
+							</div>';
+						};?>
 					</div>
 				</section><!--//projects-section-->
 		    </div><!--//resume-body-->
-		    
-		    
 	    </div>
     </article> 
 
