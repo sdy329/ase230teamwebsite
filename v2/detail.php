@@ -45,34 +45,37 @@ $members=[
 		],
 		
     ],
-    'firstN'=>'Andrey',
-        'lastN'=>'Owen',
-        'role'=>'',
-        'profile'=>'.\\assets\\img\\AO\\Icon.png',
-        'favicon'=>'.\\assets\\img\\AO\\icon.png',
-        'jobTitle'=>'Software Engineer',
-        'socials'=>[
-            'email'=>'owena5@nku.edu',
-            'phone'=>'859-496-9307',
-            'linkedin'=>'linkedin.com/in/andreyowen',
-            'github'=>'github.com/Dreymeister',
-            'website'=>'andreyowen.com'
-        ],
-        'summary'=>'I am a Software Engineering student at Northern Kentucky University! I am a fourth year at the college and plan to obtain a Bachelors Degree in Applied Software Engineering. I like to study about programming and the fundamentals of designing programs. I also enjoy LEGO and hanging out with my fiance and my cats!',
-        'jobs'=>[
-            'LEGO LBR Brick Specialist'=>[
-                'company'=>'LEGO',
-                'start'=>'2021',
-                'end'=>'Present',
-                'description'=>'Worked with customers enjoying the LEGO toy company, interactin with guests to provide a well thought-out expirence',
-
-            ],
-            'GE - General Appliances Sales Represenative'=>[
-                'company'=>'GE',
-                'start'=>'2019',
-                'end'=>'2021',
-                'description'=>'Worked with customers selling appliances and helping people find the right tools for working efficiency.',
-	];
+	'andrey'=>[
+		'firstN'=>'Andrey',
+		'lastN'=>'Owen',
+		'role'=>'',
+		'profile'=>'.\\assets\\img\\AO\\Icon.png',
+		'favicon'=>'.\\assets\\img\\AO\\icon.png',
+		'jobTitle'=>'Software Engineer',
+		'socials'=>[
+			'email'=>'owena5@nku.edu',
+			'phone'=>'859-496-9307',
+			'linkedin'=>'linkedin.com/in/andreyowen',
+			'github'=>'github.com/Dreymeister',
+			'website'=>'andreyowen.com'
+		],
+		'summary'=>'I am a Software Engineering student at Northern Kentucky University! I am a fourth year at the college and plan to obtain a Bachelors Degree in Applied Software Engineering. I like to study about programming and the fundamentals of designing programs. I also enjoy LEGO and hanging out with my fiance and my cats!',
+		'jobs'=>[
+			'LEGO LBR Brick Specialist'=>[
+				'company'=>'LEGO',
+				'start'=>'2021',
+				'end'=>'Present',
+				'description'=>'Worked with customers enjoying the LEGO toy company, interactin with guests to provide a well thought-out expirence',
+			],
+			'GE - General Appliances Sales Represenative'=>[
+				'company'=>'GE',
+				'start'=>'2019',
+				'end'=>'2021',
+				'description'=>'Worked with customers selling appliances and helping people find the right tools for working efficiency.',
+			],
+		],
+	],
+];
 
 
 $page = $members[$_GET['id']];
