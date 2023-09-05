@@ -192,8 +192,18 @@ $members=[
                 'end'=>'2024',
             ]
 		],
+		'awards'=>[
+			'VEX Worlds Division Finalists 2023'=>[
+				'description'=>'Out of 100 teams in attendance at the world championships, and 300 individual collegiate teams worldwide our team ended the season top 4 in the world.'
+			]
+		],
 		'languages'=>[
 			'English'
+		],
+		'interests'=>[
+			'Soccer',
+			'Robotics',
+			'Camping'
 		],
 		'projects'=>[
 			'NUKE Robotics Programming'=>[
