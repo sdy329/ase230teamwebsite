@@ -131,6 +131,41 @@ $members=[
 				'description'=>'Worked with customers selling appliances and helping people find the right tools for working efficiency.',
 			],
 		],
+		'proSkills'=>[
+			'JavaScript'=>[
+				'progress'=>'98',
+			],
+			'TypeScript'=>[
+				'progress'=>'96',
+			],
+			'React'=>[
+				'progress'=>'94',
+			],
+			'Node.js'=>[
+				'progress'=>'96',
+			],
+			'Java'=>[
+				'progress'=>'95',
+			],
+		],
+		'otherSkills'=>[
+			'Python',
+			'Powershell',
+			'C',
+			'C++',
+			'Wireframing',
+			'Git',
+			'Networks',
+			'Troubleshooting',
+			'Leadership',
+		],
+		'education'=>[
+            'BSc Applied Sotware Engineering'=>[
+                'school'=>'Northern Kentucky University',
+                'start'=>'2020',
+                'end'=>'2024',
+            ]
+		],
 	],
 ];
 
