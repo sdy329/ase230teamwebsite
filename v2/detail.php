@@ -148,7 +148,7 @@ $members=[
 				'company'=>'LEGO',
 				'start'=>'2021',
 				'end'=>'Present',
-				'description'=>'Worked with customers enjoying the LEGO toy company, interactin with guests to provide a well thought-out expirence',
+				'description'=>'Worked with customers enjoying the LEGO toy company, interacting with guests to provide a well thought-out expirence',
 			],
 			'GE - General Appliances Sales Represenative'=>[
 				'company'=>'GE',
