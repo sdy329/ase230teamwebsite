@@ -1,19 +1,28 @@
-
 <?php
 $members=[
     'spencer'=>[
         'firstN'=>'Spencer',
         'lastN'=>'Yates',
         'role'=>'',
-        'profile'=>'.\\assets\\img\\SY\\profile.png'
+        'dateOfBirth' => '2001-03-29',
+        'profile'=>'.\\assets\\img\\SY\\profile.png',
     ],
     'andrey'=>[
         'firstN'=>'Andrey',
         'lastN'=>'Owen',
         'role'=>'',
-        'profile'=>'.\\assets\\img\\AO\\Icon.jpg'
+        'dateOfBirth' => '2002-07-22',
+        'profile'=>'.\\assets\\img\\AO\\Icon.jpg',
     ]
-]
+];
+
+function calculateAge($dateOfBirth) {
+    $birthDate = new DateTime($dateOfBirth);
+    $currentDate = new DateTime();
+    $age = $currentDate->diff($birthDate)->y;
+    return $age;
+}
+
 
 ?>
 <!DOCTYPE html>
@@ -57,7 +66,8 @@ $members=[
 					        <div class="row p-4 justify-content-center justify-content-md-between">
 						        <div class="primary-info col-auto">
 							        <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">'.$member['firstN'].' '.$member['lastN'].'</h1>
-							        <div class="title mb-3">'.$member['role'].'</div>
+							        <div class="title mb-3">Age: ' . calculateAge($member['dateOfBirth']) . ' years</div>
+                                    <div class="title mb-3">'.$member['role'].'</div>
 								    <a href="detail.php?id='.$id.'" class="btn btn-secondary">See full profile</a>
 						        </div>
 						        <div class="secondary-info col-auto mt-2">
@@ -88,4 +98,3 @@ $members=[
 
 </body>
 </html> 
-
