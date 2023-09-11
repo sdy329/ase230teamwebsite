@@ -220,6 +220,7 @@ $members=[
 		],
 		'languages'=>[
 			'English',
+			'English',
 			'Russian'
 		],
 		'interests'=>[
@@ -259,6 +260,39 @@ $page = $members[$_GET['id']];
 $age = calculateAge($page['dateOfBirth']);
 
 $page = $members[$_GET['id']];
+
+function workExp(array $workArr){
+	foreach($workArr as $title => $details){
+		echo '<article class="resume-timeline-item position-relative pb-5">
+			<div class="resume-timeline-item-header mb-2">
+				<div class="d-flex flex-column flex-md-row">
+					<h3 class="resume-position-title font-weight-bold mb-1">'.$title.'</h3>
+					<div class="resume-company-name ms-auto">'.$details['company'].'</div>
+				</div>
+				<div class="resume-position-time">'.$details['start'].' - '.$details['end'].'</div>
+			</div>
+			<div class="resume-timeline-item-desc">
+				<p>'.$details['description'].'</p>';
+				if(count($details['achievements']) >= 1){
+					echo '<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
+					<ul>';
+					foreach($details['achievements'] as $achievement){
+						echo '<li>'.$achievement.'</li>';
+					};
+					echo '</ul>';
+				};
+				if(count($details['skills']) >= 1){
+					echo '<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+					<ul class="list-inline">';
+					foreach($details['skills'] as $skill){
+						echo '<li class="list-inline-item"><span class="badge bg-secondary badge-pill">'.$skill.'</span></li>';
+					}
+					echo '</ul>';
+				};
+				echo '</div>
+			</article>';
+	};
+};
 
 ?>
 <!DOCTYPE html>
@@ -330,31 +364,7 @@ $page = $members[$_GET['id']];
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
 						    <div class="resume-section-content">
 							    <div class="resume-timeline position-relative">
-								<?php foreach($page['jobs'] as $jobTitle => $jobDetails){
-								echo '<article class="resume-timeline-item position-relative pb-5">
-									    <div class="resume-timeline-item-header mb-2">
-										    <div class="d-flex flex-column flex-md-row">
-										        <h3 class="resume-position-title font-weight-bold mb-1">'.$jobTitle.'</h3>
-										        <div class="resume-company-name ms-auto">'.$jobDetails['company'].'</div>
-										    </div><!--//row-->
-										    <div class="resume-position-time">'.$jobDetails['start'].' - '.$jobDetails['end'].'</div>
-									    </div><!--//resume-timeline-item-header-->
-									    <div class="resume-timeline-item-desc">
-										    <p>'.$jobDetails['description'].'</p>
-										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-										    <ul>';
-											foreach($jobDetails['achievements'] as $achievement){
-												echo '<li>'.$achievement.'</li>';
-											};
-											echo '</ul>
-										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-										    <ul class="list-inline">';
-											foreach($jobDetails['skills'] as $skill){
-												echo '<li class="list-inline-item"><span class="badge bg-secondary badge-pill">'.$skill.'</span></li>';
-											}
-										    echo '</ul>
-									    </div>
-								    </article>';};?>
+								<?php workExp($page['jobs']); ?>
 							    </div>
 						    </div>
 					    </section>
