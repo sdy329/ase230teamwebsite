@@ -5,6 +5,7 @@ $members=[
         'firstN'=>'Spencer',
         'lastN'=>'Yates',
         'role'=>'',
+		'dateOfBirth' => '2001-03-01',
         'profile'=>'.\\assets\\img\\SY\\profile.png',
 		'favicon'=>'.\\assets\\img\\SY\\icon.png',
 		'jobTitle'=>'Software Engineer',
@@ -131,6 +132,7 @@ $members=[
 	'andrey'=>[
 		'firstN'=>'Andrey',
 		'lastN'=>'Owen',
+		'dateOfBirth' => '2002-07-22',
 		'role'=>'',
 		'profile'=>'.\\assets\\img\\AO\\Icon.jpg',
 		'favicon'=>'.\\assets\\img\\AO\\icon.jpg',
@@ -246,6 +248,16 @@ $members=[
 ];
 
 
+function calculateAge($dateOfBirth) {
+    $birthDate = new DateTime($dateOfBirth);
+    $currentDate = new DateTime();
+    $age = $currentDate->diff($birthDate)->y;
+    return $age;
+}
+
+$page = $members[$_GET['id']];
+$age = calculateAge($page['dateOfBirth']);
+
 $page = $members[$_GET['id']];
 
 ?>
@@ -308,6 +320,7 @@ $page = $members[$_GET['id']];
 			    <section class="resume-section summary-section mb-5">
 				    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Summary</h2>
 				    <div class="resume-section-content">
+						<p class="mb-0"><span style="font-weight: bold;"><?php echo 'Age: ' . $age . ' years'; ?></span></p>
 					    <p class="mb-0"><?php echo $page['summary'];?></p>
 				    </div>
 			    </section>
@@ -458,4 +471,5 @@ $page = $members[$_GET['id']];
 
 </body>
 </html> 
+
 
